@@ -1,0 +1,125 @@
+
+.menu_bar a, .menu_bar a span{
+	color:yellow;
+}
+
+.menu_bar{
+	display: none;
+}
+
+
+/*
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	
+}
+*/
+
+
+
+
+nav{
+	width:100%;
+	background-color: blue;
+	display: flex;
+}
+
+nav .menu-horizontal{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+nav li{
+	list-style-type: none;
+	padding: 15px 20px;
+	margin: 0px 10px;
+	border-radius: 5px;
+	*border: 2px solid red;
+}
+
+nav li:hover{
+	background-color: silver;
+	cursor: pointer;
+}
+
+li a{
+	color:yellow;
+	text-decoration: none;
+}
+
+
+nav ul li > ul{
+	position: absolute;
+	background-color: #58b813;
+	margin-top:15px;
+	border-radius: 5px;
+	transform: rotateY(360deg) scale(0);
+	box-shadow: 1px 1px 10px black;
+}
+
+
+
+nav ul li:hover ul{
+	*display: block;
+	*background-color: blueviolet;
+	transform: rotateY(0deg) scale(1);
+	transition: all 1s; 
+}
+
+
+nav ul li ul:before{
+	content: '';
+	width: 0;
+	height: 0;
+
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid #58b813;
+
+	position:absolute;
+	margin-top:-8px;
+	margin-left:20px;
+}
+
+
+nav ul li ul li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	nav{
+		width:minmax(50px, auto);
+	}
+	nav ul{
+		position:fixed;
+		left:-100%;
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background-color: #ccc;
+	}
+	
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		background-color: #024559;
+		color:#fff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.menu_bar span{
+		float:right;
+		font-size:2.25rem;
+	}
+
+}	

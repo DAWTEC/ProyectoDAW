@@ -1,0 +1,32 @@
+
+logueos:
+uno ahi se va a loguear cualquier tipo de usuario 
+
+ALTAS DE ACTORES:
+clientes: se van a dar de altas solos
+trabajadores: los va a dar administrador
+Administrador: Nosotros (directamente en la base de datos)
+   No  Administrador actual ler cede los derechos al nuevo
+
+Seguridad:
+1. Todos los scripts van mandar llamar una funcion (derechos_ejecucion)
+en la cual verifique si el usuario que se logueo tiene derechos
+de ejecutar el script que esta intentando abrir.
+
+2. Todos los scripts van mandar llamar una funcion para verificar si ya 
+   existe la variable de sesion (sesion_iniciada) y ademas 
+   se tien un valor de S.        
+
+
+Menu dinamico:
+  Primera opcion: crear el menu dinamicamente de acuerdo al tipo de usuario
+                  que se conecte.
+  Segunda opcion: crear el menu dinamicamente de acuerdo al tipo de usuario
+                  que se  y al usuario que se conecte.
+Menu estatico:
+  Un menu para cda tipo de usuario (menu_cliente, menu_trabajador, 
+                                    menu_administrador y menu_actor)
+
+
+
+

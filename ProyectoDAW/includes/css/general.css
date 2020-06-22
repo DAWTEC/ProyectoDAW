@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size:16px;
+	box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+    font: .9rem/1.2 Arial, Helvetica, sans-serif;
+}
+
+header{
+    font-size: 3rem;
+}
+
+
+header, footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+
+aside {
+	border-right: 1px solid #999;
+}
+
+header h1{
+    color: blue;
+    font-size: 35px;
+    margin: 5px auto;
+    text-align: center;   
+}
+
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    font-size: .8rem;
+}
+
+.error{
+    color:red;
+}
+

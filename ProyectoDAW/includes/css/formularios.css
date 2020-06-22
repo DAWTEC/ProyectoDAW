@@ -1,0 +1,29 @@
+.error{
+	background-color: yellow !important;
+	color:red !important;
+	border-radius: 5px !important;
+}
+
+.agarra_foco{
+   color:blue;
+   font-weight: bold;
+   background-color: #FFFFCC;
+   padding:5px;
+}
+
+
+
+.pierde_foco{
+   background-color: #fff;
+   color:red;
+   font-weight: normal;
+   padding:5px;
+}
+
+.ayuda{
+	color:MediumSeaGreen;
+	font-size: 1.2rem;
+}
+.obliga{
+	color:red;
+}
